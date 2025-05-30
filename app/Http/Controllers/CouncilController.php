@@ -33,7 +33,7 @@ class CouncilController extends Controller
         Council::create([
             'name' => $request->input('name'),
             'description' => $request->input('description'),
-            'is_active' => $request->input('is_active') == 1,
+            'is_active' => $request->input('is_active'),
         ]);
 
         return redirect()->route('councils.index');

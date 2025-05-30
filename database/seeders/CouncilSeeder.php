@@ -40,7 +40,7 @@ class CouncilSeeder extends Seeder
         ];
 
         foreach ($councils as $council) {
-            DB::table('sectorial_councils')->insert([
+            DB::table('councils')->insert([
                 'name' => $council['name'],
                 'description' => $council['description'],
                 'is_active' => $council['is_active'],
