@@ -9,5 +9,5 @@ class Council extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'description', 'is_valid'];
+    protected $fillable = ['name', 'description', 'is_active'];
 }
